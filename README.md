@@ -185,7 +185,9 @@ Implement serialization schemas for both models.
 
 Run the migrations after creating your models. You'll need to run
 `flask db init` before running `flask db migrate -m "initial migration"` and
-`flask db upgrade head`.
+`flask db upgrade head`. Be sure to run these commands from the `server/`
+directory, not the root directory, so the migrations directory is nested as 
+`server/migrations/`.
 
 #### Step 4: Verify your Code and Seed the Database
 
